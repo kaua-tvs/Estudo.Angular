@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { CursosService } from './cursos.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cursos',
@@ -8,18 +9,16 @@ import { Component } from '@angular/core';
 
 export class CursosComponent implements OnInit{
 
-  AceitarQualquerCoisa: any;
+  nomePortal: string;
+  cursos :string[];
 
-  nomePortal: string = 'http://loiane.training';
-  cursos :string[] = ['java', 'ext js', 'angular']
-  construtor(){
-    this.AceitarQualquerCoisa = 5;
-    this.AceitarQualquerCoisa = "sdfds0"
+  construtor(cursoService: CursosService){
 
-    this.nomePortal = 'http://loiane.training';
+    // var service = new CursosService();
+    this.cursos = cursoService.getCursos();
   }
 
   ngOnInit(){
-    
+
   }
 } // onde vai toda logica do projeto js ...
