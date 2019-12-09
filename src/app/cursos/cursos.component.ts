@@ -19,6 +19,6 @@ export class CursosComponent implements OnInit{
   }
 
   ngOnInit(){
-
+ 
   }
 } // onde vai toda logica do projeto js ...
