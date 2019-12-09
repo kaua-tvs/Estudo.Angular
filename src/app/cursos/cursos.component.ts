@@ -6,4 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 
-export class CursosComponent {}
+export class CursosComponent {} // onde vai toda logica do projeto js ...
