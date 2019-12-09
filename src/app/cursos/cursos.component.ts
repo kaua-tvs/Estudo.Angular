@@ -6,4 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 
-export class CursosComponent {} // onde vai toda logica do projeto js ...
+export class CursosComponent implements OnInit{
+
+  AceitarQualquerCoisa: any;
+
+  nomePortal: string = 'http://loiane.training';
+  cursos :string[] = ['java', 'ext js', 'angular']
+  construtor(){
+    this.AceitarQualquerCoisa = 5;
+    this.AceitarQualquerCoisa = "sdfds0"
+
+    this.nomePortal = 'http://loiane.training';
+  }
+
+  ngOnInit(){
+    
+  }
+} // onde vai toda logica do projeto js ...
